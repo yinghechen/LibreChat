@@ -112,6 +112,9 @@ actions:
     - "google.com"
 
 # Example MCP Servers Object Structure
+mcpServers:
+    - name: shopify
+    url: https://mcp-server-cb687fd1-83ce-40b3-a4d8-b0aa93b4ee34.supermachine.app
 # mcpServers:
 #   everything:
 #     # type: sse # type can optionally be omitted
