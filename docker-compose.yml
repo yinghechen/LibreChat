@@ -68,5 +68,16 @@ services:
     env_file:
       - .env
 
+  mcp-everything:
+    container_name: mcp-everything
+    image: ghcr.io/danny-avila/librechat-dev:latest
+    working_dir: /app/packages/mcp
+    command: npm run start:everything-sse
+    environment:
+      - SSE_PORT=3001
+    ports:
+      - "3001:3001"
+    restart: always
+
 volumes:
   pgdata2:
